@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation Bar*/
+#navbar{
+    display: flex;
+    align-items: center; 
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+/* Navigation Bar: Logo And Image*/
+#logo{
+    margin: 3px 34px;
+}
+#logo img{
+    margin: 0px 20px;
+    height: 55px;
+}
+
+/* Navigation Bar: List Styling*/
+.items{
+    display: flex;
+}
+.items li{
+    font-size: 1.2rem;
+    list-style: none;
+    font-family: 'Bree Serif', serif;
+}
+.items a{
+    color: white;
+    padding: 0px 22px;
+    text-decoration: none;    
+}
+.items a:hover{
+    color: rgb(8, 8, 8);
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/* Home Section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    /* margin: auto; */
+    padding: 3px 200px;
+    height: 445px; 
+    justify-content: center;
+    align-items: center;  
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url("../img/hero-img.jpg") no-repeat center center/cover;
+    height: 450px;
+    width: 100%;
+    top:0;
+    left: 0;
+    opacity: 0.89;
+    z-index: -1;
+}
+#home h1{
+    color: white;
+    font-family: 'Bree Serif', serif;
+    font-size: 3rem;
+    padding-top:64px ;
+    margin-top:64px ;
+}
+#home p{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#services{
+    display: flex;
+    margin: 8px 20px;
+
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px 24px;
+    margin: 3px 6px;
+    margin-bottom: 25px;
+    border-radius: 23px;
+    background-color: #f2f2f2;
+    /* width: 30%;  */
+}
+#services .box img{
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: auto;
+  
+}
+#services .box p{
+   font-family:'Bree Serif', serif;
+   font-size: 1.2rem;
+  
+}
+/* Client Section*/
+.client-section{
+    position: relative;
+}
+.client-section::before{
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg1-img.jpg") ;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.client-section > h1{
+    padding: 10px;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 100px;
+}
+
+/*Contact Section*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background-image: url("../img/contact.jpg") ;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    z-index: -1;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:34px ;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 9px;
+    border: none;
+    box-shadow: 3px 5px 4px gray;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+   font-size: 1.2rem;
+   font-family: 'Bree Serif', serif;
+}
+/*Footer Section*/
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+/* utility classes*/
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.6rem;
+    padding: 8px;
+}
+.h-secondry{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.8rem;
+    padding: 12px;
+
+}
+.center{
+    text-align: center;
+}
+.btn{
+    padding: 3px 15px;
+    background-color: brown;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn1{
+    padding: 3px 15px;
+    background-color: brown;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 5px 4px gray;
+    width: 95%;
+}
+
